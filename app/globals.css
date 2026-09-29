@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #4ade80;
+  --bg: #0a0f0d;
+  --font-dm-sans: "DM Sans", "Inter", "Segoe UI", sans-serif;
+  --font-jetbrains: "JetBrains Mono", "Consolas", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #0a0f0d;
+  color: #f0faf3;
+  font-family: var(--font-dm-sans), "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(74, 222, 128, 0.3);
+  color: #f0faf3;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f3323;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4ade80;
+}
+
+.section-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 24px;
+}
+
+.section-inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #4ade80;
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #f0faf3;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.muted {
+  color: #9ab8a0;
+}
+
+.card {
+  background: #111c14;
+  border: 1px solid #1f3323;
+  border-radius: 8px;
+}
+
+.nav-link {
+  position: relative;
+  color: #9ab8a0;
+  font-size: 0.92rem;
+  transition: color 180ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: #4ade80;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.nav-link:hover {
+  color: #4ade80;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.fade-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 130px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, #0a0f0d);
+}
+
+.phone-scrollbar {
+  scrollbar-width: none;
+}
+
+.phone-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.78); }
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    padding: 88px 18px;
+  }
+}
