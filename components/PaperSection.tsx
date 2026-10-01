@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, FileText } from "lucide-react";
-import { PAPER_PDF } from "@/lib/config";
+import { PAPER_PDF, PAPER_URL } from "@/lib/config";
 
 const changes = [
   ["Dataset", "About 1,200 rows, mostly synthetic, one crop (rice)", "2,200 real samples, 22 crops"],
@@ -19,7 +19,8 @@ export default function PaperSection() {
         <div className="mt-4 grid items-start gap-8 lg:grid-cols-[1.3fr_0.7fr]">
           <div>
             <h2 className="section-title">EnviroSense: AI-Driven Microclimate Control for Sustainable Agriculture Using Edge Computing</h2>
-            <p className="mt-4 font-mono text-sm text-textMuted">Muhammad Hamza Faisal &amp; Haydar Cukurtepe · Valparaiso University · 2024</p>
+            <p className="mt-4 font-mono text-sm text-textMuted">Muhammad Hamza Faisal &amp; Haydar Cukurtepe · Valparaiso University</p>
+            <p className="mt-2 text-sm text-textPrimary">Published in <span className="italic">Lecture Notes in Networks and Systems</span> (Springer) · SAI Computing Conference 2025, London</p>
             <p className="mt-6 text-lg leading-8 text-textMuted">
               The paper proposes a low-cost system that combines IoT sensors, machine learning and a mobile app to give small and
               medium-scale farms the kind of microclimate insight usually reserved for large agribusiness. It covers the system
@@ -27,8 +28,11 @@ export default function PaperSection() {
               for agricultural prediction tasks.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href={PAPER_PDF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-bg">
-                <FileText size={18} /> Read the paper (PDF)
+              <a href={PAPER_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-bg">
+                <FileText size={18} /> Read on Springer
+              </a>
+              <a href={PAPER_PDF} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-lg border border-border px-6 py-3 font-semibold text-textMuted hover:text-accent">
+                Author PDF
               </a>
               <a href="#demo" className="flex items-center gap-2 rounded-lg border border-accent px-6 py-3 font-semibold text-accent">
                 Try the live system <ArrowRight size={18} />
@@ -58,7 +62,7 @@ export default function PaperSection() {
               <thead>
                 <tr className="border-b border-border text-textMuted">
                   <th className="py-3 pr-4 font-normal"></th>
-                  <th className="py-3 pr-4 font-normal">Paper (2024)</th>
+                  <th className="py-3 pr-4 font-normal">Paper (Springer 2025)</th>
                   <th className="py-3 font-normal text-accent">Live system (v2)</th>
                 </tr>
               </thead>

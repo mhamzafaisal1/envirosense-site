@@ -7,3 +7,5 @@ export const GITHUB = {
 };
 export const PAPER_PDF = "/EnviroSense.pdf";
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "mhamzafaisal020@gmail.com";
+export const PAPER_URL = "https://link.springer.com/chapter/10.1007/978-3-031-92608-2_19";
+export const PORTFOLIO_URL = process.env.NEXT_PUBLIC_PORTFOLIO_URL || "";
