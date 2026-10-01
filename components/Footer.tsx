@@ -3,7 +3,8 @@ import { CONTACT_EMAIL, GITHUB, PAPER_PDF } from "@/lib/config";
 
 export default function Footer() {
   const links = [
-    ["Live demo", "#demo"],
+    ["Try the app", "#app"],
+    ["Model", "#demo"],
     ["Results", "#results"],
     ["How it's built", "#architecture"],
     ["Paper", "#paper"],

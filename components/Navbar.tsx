@@ -5,7 +5,8 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-  ["Live demo", "#demo"],
+  ["Try the app", "#app"],
+  ["Model", "#demo"],
   ["Results", "#results"],
   ["How it's built", "#architecture"],
   ["Paper", "#paper"],
@@ -51,7 +52,7 @@ export default function Navbar() {
           ))}
         </div>
         <a
-          href="#demo"
+          href="#app"
           className="hidden rounded-lg border border-accent px-5 py-2 text-sm font-semibold text-accent transition hover:bg-accent hover:text-bg md:block"
         >
           Try it

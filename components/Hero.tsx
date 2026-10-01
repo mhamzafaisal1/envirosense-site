@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import StatusDot from "@/components/StatusDot";
 import { useApiStatus } from "@/hooks/useApiStatus";
 import metrics from "@/lib/metrics.json";
-import { APP_URL } from "@/lib/config";
 
 const HeroScene = dynamic(() => import("@/components/three/HeroScene"), { ssr: false });
 
@@ -73,17 +72,17 @@ export default function Hero() {
         >
           <motion.a
             whileHover={{ scale: 1.04, boxShadow: "0 0 28px rgba(74,222,128,0.45)" }}
-            href="#demo"
+            href="#app"
             className="rounded-lg bg-accent px-8 py-4 font-semibold text-bg"
           >
-            Try the live model
+            Try the app
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.04, backgroundColor: "rgba(74,222,128,0.08)" }}
-            href={APP_URL || "#paper"}
+            href="#paper"
             className="rounded-lg border border-accent px-8 py-4 font-semibold text-accent"
           >
-            {APP_URL ? "Open the app" : "Read the paper"}
+            Read the paper
           </motion.a>
         </motion.div>
 

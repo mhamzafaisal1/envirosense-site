@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import AppDemo from "@/components/phone/AppDemo";
 import LiveDemo from "@/components/LiveDemo";
 import ResultsSection from "@/components/ResultsSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <CursorGlow />
       <Navbar />
       <Hero />
+      <AppDemo />
       <LiveDemo />
       <ResultsSection />
       <ProblemSection />

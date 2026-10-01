@@ -94,9 +94,9 @@ export default function LiveDemo() {
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
             <p className="section-label">Live demo</p>
-            <h2 className="section-title mt-4">Enter a soil test. Get a recommendation.</h2>
+            <h2 className="section-title mt-4">Or call the model directly.</h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-textMuted">
-              Every result below comes from the deployed Random Forest model, not a mock. Pick a preset or drag the sliders.
+              The same endpoint the app uses, with every input exposed. Drag a slider and the deployed Random Forest re-predicts; open the API call to see the raw request and response.
             </p>
           </div>
           <StatusDot status={status} />
