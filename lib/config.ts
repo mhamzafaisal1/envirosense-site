@@ -7,4 +7,4 @@ export const GITHUB = {
   app: process.env.NEXT_PUBLIC_GITHUB_APP || "https://github.com/",
 };
 export const PAPER_PDF = "/EnviroSense.pdf";
-export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hamza.faisal@valpo.edu";
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "mhamzafaisal020@gmail.com";
